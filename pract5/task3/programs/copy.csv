@@ -1,0 +1,27 @@
+op,B,comment
+# Этап 3: копирование 5 элементов 200..204 -> 210..214
+load_const,10,acc = 10
+write,200,mem[200] = acc
+load_const,-20,acc = -20
+write,201,mem[201] = acc
+load_const,30,acc = 30
+write,202,mem[202] = acc
+load_const,-40,acc = -40
+write,203,mem[203] = acc
+load_const,50,acc = 50
+write,204,mem[204] = acc
+load_const,200,acc = адрес начала источника
+read,0,acc = mem[acc + 0]
+write,210,mem[210] = acc
+load_const,200,acc = адрес начала источника
+read,1,acc = mem[acc + 1]
+write,211,mem[211] = acc
+load_const,200,acc = адрес начала источника
+read,2,acc = mem[acc + 2]
+write,212,mem[212] = acc
+load_const,200,acc = адрес начала источника
+read,3,acc = mem[acc + 3]
+write,213,mem[213] = acc
+load_const,200,acc = адрес начала источника
+read,4,acc = mem[acc + 4]
+write,214,mem[214] = acc

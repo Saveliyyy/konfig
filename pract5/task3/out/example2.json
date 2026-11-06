@@ -1,0 +1,26 @@
+{
+  "start": 200,
+  "end": 204,
+  "memory": [
+    {
+      "address": 200,
+      "value": 0
+    },
+    {
+      "address": 201,
+      "value": 0
+    },
+    {
+      "address": 202,
+      "value": 0
+    },
+    {
+      "address": 203,
+      "value": 0
+    },
+    {
+      "address": 204,
+      "value": 0
+    }
+  ]
+}

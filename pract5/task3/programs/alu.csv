@@ -1,0 +1,22 @@
+op,B,comment
+"# Этап 4: проверка sgn(). Аргументы в 220..224, результаты в 200..204"
+load_const,-5,acc = -5
+write,220,mem[220] = acc
+load_const,0,acc = 0
+write,221,mem[221] = acc
+load_const,17,acc = 17
+write,222,mem[222] = acc
+load_const,-1,acc = -1
+write,223,mem[223] = acc
+load_const,1000000,acc = 1000000
+write,224,mem[224] = acc
+sgn,220,acc = sgn(mem[220]) = sgn(-5)
+write,200,mem[200] = acc
+sgn,221,acc = sgn(mem[221]) = sgn(0)
+write,201,mem[201] = acc
+sgn,222,acc = sgn(mem[222]) = sgn(17)
+write,202,mem[202] = acc
+sgn,223,acc = sgn(mem[223]) = sgn(-1)
+write,203,mem[203] = acc
+sgn,224,acc = sgn(mem[224]) = sgn(1000000)
+write,204,mem[204] = acc

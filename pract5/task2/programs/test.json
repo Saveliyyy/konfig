@@ -1,0 +1,6 @@
+[
+  {"op": "load_const", "B": 38, "comment": "Тест: A=24, B=38"},
+  {"op": "read", "B": 309, "comment": "Тест: A=46, B=309"},
+  {"op": "write", "comment": "Тест: A=38"},
+  {"op": "pow", "B": 180, "C": 1, "comment": "Тест: A=61, B=180, C=1"}
+]

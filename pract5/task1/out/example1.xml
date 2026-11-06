@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<memory start="300" end="317">
+  <cell address="300">-1</cell>
+  <cell address="301">-2</cell>
+  <cell address="302">-3</cell>
+  <cell address="303">-4</cell>
+  <cell address="304">-5</cell>
+  <cell address="305">-6</cell>
+  <cell address="306">-7</cell>
+  <cell address="307">-8</cell>
+  <cell address="308">0</cell>
+  <cell address="309">0</cell>
+  <cell address="310">1</cell>
+  <cell address="311">2</cell>
+  <cell address="312">3</cell>
+  <cell address="313">4</cell>
+  <cell address="314">5</cell>
+  <cell address="315">6</cell>
+  <cell address="316">7</cell>
+  <cell address="317">8</cell>
+</memory>

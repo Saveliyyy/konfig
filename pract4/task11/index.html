@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Задача 11 — сумма чисел на Wasm</title>
+</head>
+<body>
+<h1>Сумма вводимых чисел (Wasm)</h1>
+<p>Вводите числа по одному, 0 — конец ввода. Результат покажется через alert.</p>
+<button id="start">Запустить</button>
+<script>
+// Байты sum.wasm (собран из sum.c), встроены в base64,
+// чтобы страница работала при открытии файла напрямую, без сервера.
+const WASM_B64 = "AGFzbQEAAAABDANgAAF/YAF/AGAAAAIVAgNlbnYDZ2V0AAADZW52A3B1dAABAwIBAgUDAQACBggBfwFBgIgECwcQAgZtZW1vcnkCAANydW4AAgooASYBA39BACEAA0AQgICAgAAiASAAIgJqIQAgAQ0ACyACEIGAgIAACwA2BG5hbWUACQhzdW0ud2FzbQEQAwADZ2V0AQNwdXQCA3J1bgcSAQAPX19zdGFja19wb2ludGVyADgJcHJvZHVjZXJzAQxwcm9jZXNzZWQtYnkBDFVidW50dSBjbGFuZxExOC4xLjMgKDF1YnVudHUxKQAsD3RhcmdldF9mZWF0dXJlcwIrD211dGFibGUtZ2xvYmFscysIc2lnbi1leHQ=";
+const bytes = Uint8Array.from(atob(WASM_B64), c => c.charCodeAt(0));
+
+const imports = {
+  env: {
+    get: () => parseInt(prompt("Введите число (0 — конец):", "0"), 10) || 0,
+    put: (x) => alert("Сумма: " + x),
+  },
+};
+
+WebAssembly.instantiate(bytes, imports).then(({ instance }) => {
+  document.getElementById("start").onclick = () => instance.exports.run();
+});
+</script>
+</body>
+</html>

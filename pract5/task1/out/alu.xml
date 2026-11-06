@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<memory start="300" end="305">
+  <cell address="300">5</cell>
+  <cell address="301">7</cell>
+  <cell address="302">0</cell>
+  <cell address="303">123456</cell>
+  <cell address="304">99</cell>
+  <cell address="305">67108864</cell>
+</memory>

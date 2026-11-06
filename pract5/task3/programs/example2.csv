@@ -1,0 +1,22 @@
+op,B,comment
+"# Этап 5, пример 2: все нули. Вектор 200..204, результат на месте"
+load_const,0,acc = 0
+write,200,mem[200] = acc
+load_const,0,acc = 0
+write,201,mem[201] = acc
+load_const,0,acc = 0
+write,202,mem[202] = acc
+load_const,0,acc = 0
+write,203,mem[203] = acc
+load_const,0,acc = 0
+write,204,mem[204] = acc
+sgn,200,acc = sgn(x[0])
+write,200,x[0] = acc
+sgn,201,acc = sgn(x[1])
+write,201,x[1] = acc
+sgn,202,acc = sgn(x[2])
+write,202,x[2] = acc
+sgn,203,acc = sgn(x[3])
+write,203,x[3] = acc
+sgn,204,acc = sgn(x[4])
+write,204,x[4] = acc

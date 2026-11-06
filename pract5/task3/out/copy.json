@@ -1,0 +1,66 @@
+{
+  "start": 200,
+  "end": 214,
+  "memory": [
+    {
+      "address": 200,
+      "value": 10
+    },
+    {
+      "address": 201,
+      "value": -20
+    },
+    {
+      "address": 202,
+      "value": 30
+    },
+    {
+      "address": 203,
+      "value": -40
+    },
+    {
+      "address": 204,
+      "value": 50
+    },
+    {
+      "address": 205,
+      "value": 0
+    },
+    {
+      "address": 206,
+      "value": 0
+    },
+    {
+      "address": 207,
+      "value": 0
+    },
+    {
+      "address": 208,
+      "value": 0
+    },
+    {
+      "address": 209,
+      "value": 0
+    },
+    {
+      "address": 210,
+      "value": 10
+    },
+    {
+      "address": 211,
+      "value": -20
+    },
+    {
+      "address": 212,
+      "value": 30
+    },
+    {
+      "address": 213,
+      "value": -40
+    },
+    {
+      "address": 214,
+      "value": 50
+    }
+  ]
+}
